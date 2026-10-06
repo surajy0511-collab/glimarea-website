@@ -194,14 +194,6 @@ h2 em{font-style:italic;color:var(--sage-deep)}
 .step h3{margin-top:20px;font-family:'Playfair Display',serif;font-size:20px;letter-spacing:.12em;text-transform:uppercase}
 .step p{margin-top:12px;font-size:14px;line-height:1.65;color:rgba(40,54,34,.65)}
 
-/* ---------- Gallery ---------- */
-.gallery{margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:180px;gap:16px}
-@media(min-width:768px){.gallery{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px}}
-.gtile{border-radius:12px;overflow:hidden;position:relative;background:var(--stone)}
-.gtile img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s ease}
-.gtile:hover img{transform:scale(1.05)}
-.g1{grid-column:span 2;grid-row:span 2}
-.g2,.g5{grid-column:span 2}
 /* Clean campaign crops: remove promotional copy and keep the visual subject */
 .gallery .g1 img{object-position:50% 78%;transform:scale(1.55)}
 .gallery .g2 img{object-position:50% 43%;transform:scale(1.18)}
@@ -523,26 +515,7 @@ footer{background:var(--forest);color:var(--ivory);padding:64px 0}
   </div>
 </section>
 
-<!-- ============ GALLERY ============ -->
-<section class="section" id="gallery">
-  <div class="container">
-    <div class="benefits-head reveal">
-      <div>
-        <p class="eyebrow">The Campaign</p>
-        <h2>Glimarea, <em>in focus.</em></h2>
-      </div>
-      <p style="max-width:380px;font-size:14px;line-height:1.7;color:rgba(40,54,34,.65)">Original Glimarea campaign imagery — the jar, the box and the results, exactly as the brand presents them.</p>
-    </div>
-    <div class="gallery">
-      <div class="gtile g1 reveal"><img src="assets/ad-glow.png" alt="Glimarea Night Cream jar with botanical leaves" loading="lazy"></div>
-      <div class="gtile g2 reveal"><img src="assets/ad-splitface.png" alt="Glimarea skincare before and after portrait" loading="lazy"></div>
-      <div class="gtile g3-clean reveal"><img src="assets/product-stone.jpg" alt="Glimarea Night Cream jar on natural stone" loading="lazy"></div>
-      <div class="gtile g4-clean reveal"><img src="assets/ad-healthier.png" alt="Glimarea Night Cream product" loading="lazy"></div>
-      <div class="gtile g5 reveal"><img src="assets/product-box-source.png" alt="Glimarea Night Cream jar and box" loading="lazy"></div>
-    </div>
-  </div>
-</section>
-
+<!-- ============ BRAND STORY ============ -->
 <!-- ============ BRAND STORY ============ -->
 <section class="section bg-cream" id="about">
   <div class="container">
