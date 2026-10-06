@@ -1,0 +1,689 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glimarea Skincare — Night Cream 30g | Your Skin's Natural Glow</title>
+<meta name="description" content="Glimarea Night Cream 30g — fades acne marks, deeply hydrates and brightens skin tone. Gentle &amp; safe premium skincare. Real people. Real results.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23283622'/%3E%3Cpath d='M45 17c-15 2-24 11-25 26 15-1 24-10 25-26z' fill='none' stroke='%23F4F0E7' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Pinyon+Script&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#F4F0E7; --cream:#EFE9DC; --sage:#7C8764; --sage-deep:#66704F;
+  --forest:#283622; --stone:#D8CFC0; --stone-light:#E7E0D2; --champagne:#C4B183;
+  --wa-number: "919999999999";
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--forest);font-family:'Manrope',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+::selection{background:var(--sage);color:var(--ivory)}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+@media(min-width:768px){.container{padding:0 40px}}
+.font-display{font-family:'Playfair Display',serif}
+.font-script{font-family:'Pinyon Script',cursive}
+.eyebrow{display:flex;align-items:center;gap:16px;font-size:11px;font-weight:500;letter-spacing:.34em;text-transform:uppercase;color:var(--sage-deep)}
+.eyebrow::before{content:"";height:1px;width:40px;background:rgba(124,135,100,.6)}
+.eyebrow::after{content:"✦";font-size:9px;color:var(--champagne)}
+.eyebrow.center::before{display:none}
+section{scroll-margin-top:90px}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Nav ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .5s,box-shadow .5s,border-color .5s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(244,240,231,.92);backdrop-filter:blur(10px);border-color:rgba(40,54,34,.1);box-shadow:0 8px 30px rgba(40,54,34,.06)}
+.nav-inner{max-width:1280px;margin:0 auto;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+@media(min-width:768px){.nav-inner{padding:0 40px}}
+.nav-logo img{height:38px;width:auto}
+@media(min-width:768px){.nav-logo img{height:42px}}
+.nav-links{display:none;gap:32px}
+@media(min-width:1024px){.nav-links{display:flex}}
+.nav-links a{font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(40,54,34,.8);position:relative;transition:color .3s}
+.nav-links a:hover{color:var(--forest)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:var(--sage);transition:width .3s}
+.nav-links a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:12px;border-radius:999px;background:var(--forest);color:var(--ivory);font-size:11px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;padding:16px 32px;transition:background .3s,transform .3s;border:none;cursor:pointer}
+.btn:hover{background:var(--sage-deep)}
+.btn .arrow{transition:transform .3s}
+.btn:hover .arrow{transform:translateX(4px)}
+.btn-outline{background:transparent;color:var(--forest);border:1px solid rgba(40,54,34,.3)}
+.btn-outline:hover{background:var(--forest);color:var(--ivory);border-color:var(--forest)}
+.btn-light{background:var(--ivory);color:var(--forest)}
+.btn-light:hover{background:var(--cream)}
+.nav-cta{display:none;padding:10px 24px}
+@media(min-width:640px){.nav-cta{display:inline-flex}}
+.burger{display:flex;width:40px;height:40px;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;color:var(--forest)}
+@media(min-width:1024px){.burger{display:none}}
+.mobile-menu{position:fixed;inset:0;z-index:60;background:var(--ivory);display:flex;flex-direction:column;padding:24px 32px 40px;opacity:0;pointer-events:none;transition:opacity .35s}
+.mobile-menu.open{opacity:1;pointer-events:auto}
+.mobile-menu nav{margin-top:56px;display:flex;flex-direction:column}
+.mobile-menu nav a{font-family:'Playfair Display',serif;font-size:30px;padding:16px 0;border-bottom:1px solid rgba(40,54,34,.1)}
+.mobile-menu .btn{margin-top:auto;justify-content:center}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;padding:110px 0 80px;background:var(--ivory)}
+@media(min-width:768px){.hero{padding:150px 0 110px}}
+.hero::before{content:"";position:absolute;top:-140px;right:-170px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(216,207,192,.6),transparent 65%)}
+.hero::after{content:"";position:absolute;top:260px;left:-190px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(124,135,100,.16),transparent 65%)}
+.hero-word{position:absolute;bottom:-20px;left:0;font-family:'Playfair Display',serif;font-size:22vw;line-height:1;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(40,54,34,.2);pointer-events:none;user-select:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr;gap:56px;align-items:center}
+@media(min-width:768px){.hero-grid{grid-template-columns:1fr 1fr}}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(52px,7vw,84px);line-height:.98;margin-top:28px}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:4px}
+.hero h1 .line span{display:block;transform:translateY(112%);animation:lineup 1.05s cubic-bezier(.22,1,.36,1) forwards}
+.hero h1 .line:nth-child(2) span{animation-delay:.14s}
+.hero h1 .line:nth-child(3) span{animation-delay:.28s}
+.hero h1 em{font-style:italic;color:var(--sage-deep)}
+@keyframes lineup{to{transform:none}}
+.hero-sub{margin-top:28px;max-width:440px;font-size:16px;line-height:1.7;color:rgba(40,54,34,.75)}
+@media(min-width:768px){.hero-sub{font-size:18px}}
+.hero-ctas{margin-top:40px;display:flex;flex-wrap:wrap;gap:16px}
+.hero-tag{margin-top:40px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:rgba(40,54,34,.5)}
+.fade-up{opacity:0;transform:translateY(18px);animation:fadeup .9s ease forwards}
+.fade-up.d1{animation-delay:.5s}.fade-up.d2{animation-delay:.65s}.fade-up.d3{animation-delay:.8s}
+@keyframes fadeup{to{opacity:1;transform:none}}
+.hero-img-wrap{position:relative;opacity:0;animation:fadeup .9s ease .65s forwards,float 7s ease-in-out 1.7s infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hero-img{border-radius:160px 160px 16px 16px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(40,54,34,.35)}
+.hero-badge{position:absolute;top:-24px;left:16px;background:rgba(244,240,231,.95);backdrop-filter:blur(6px);border:1px solid rgba(40,54,34,.1);padding:16px 20px;box-shadow:0 18px 40px -18px rgba(40,54,34,.35)}
+@media(min-width:768px){.hero-badge{top:90px;left:-40px}}
+.hero-badge .script{font-family:'Pinyon Script',cursive;font-size:26px;line-height:1;color:var(--sage-deep)}
+.hero-badge small{display:block;margin-top:4px;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:rgba(40,54,34,.6)}
+
+/* ---------- Marquee ---------- */
+.marquee{overflow:hidden;background:var(--sage);border-top:1px solid rgba(40,54,34,.15);border-bottom:1px solid rgba(40,54,34,.15);padding:16px 0}
+.marquee-track{display:flex;width:max-content;animation:marquee 48s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@media(max-width:768px){.marquee-track{animation-duration:64s}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.marquee-item{display:flex;align-items:center;white-space:nowrap;font-family:'Playfair Display',serif;font-size:15px;letter-spacing:.28em;text-transform:uppercase;color:var(--ivory);padding:0 32px}
+.marquee-item::after{content:"✦";font-size:10px;color:var(--champagne);margin-left:64px}
+
+/* ---------- Sections ---------- */
+.section{padding:96px 0}
+@media(min-width:768px){.section{padding:128px 0}}
+.bg-cream{background:var(--cream)}
+.bg-stone{background:var(--stone-light)}
+.bg-sage{background:var(--sage)}
+.grid-2{display:grid;grid-template-columns:1fr;gap:64px;align-items:center}
+@media(min-width:768px){.grid-2{grid-template-columns:1fr 1fr}}
+h2{font-family:'Playfair Display',serif;font-size:clamp(36px,4.5vw,52px);line-height:1.06;margin-top:24px}
+h2 em{font-style:italic;color:var(--sage-deep)}
+.lead{margin-top:28px;font-size:16px;line-height:1.75;color:rgba(40,54,34,.75);max-width:480px}
+.img-frame{border-radius:16px;overflow:hidden}
+.img-frame img{width:100%;object-fit:cover;transition:transform 1.4s ease}
+.img-frame:hover img{transform:scale(1.04)}
+.detail-list{margin-top:36px;max-width:440px;display:grid;grid-template-columns:1fr 1fr;column-gap:32px;list-style:none}
+.detail-list li{display:flex;align-items:center;gap:12px;border-top:1px solid rgba(40,54,34,.15);padding:12px 0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(40,54,34,.7)}
+.detail-list li::before{content:"✦";font-size:8px;color:var(--champagne)}
+.mt-40{margin-top:40px}
+
+/* ---------- Benefits ---------- */
+.benefits-head{display:flex;flex-direction:column;gap:24px}
+@media(min-width:768px){.benefits-head{flex-direction:row;align-items:flex-end;justify-content:space-between}}
+.benefits-grid{margin-top:64px;display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){.benefits-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.benefits-grid{grid-template-columns:repeat(4,1fr)}}
+.benefit{border:1px solid rgba(40,54,34,.12);background:rgba(239,233,220,.6);padding:32px;transition:transform .5s,background .5s,border-color .5s}
+.benefit:hover{transform:translateY(-8px);background:var(--cream);border-color:rgba(124,135,100,.5)}
+.benefit-top{display:flex;justify-content:space-between;align-items:flex-start}
+.benefit-num{font-family:'Playfair Display',serif;font-style:italic;font-size:14px;color:rgba(40,54,34,.4)}
+.benefit-icon{width:56px;height:56px;border:1px solid rgba(40,54,34,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .5s}
+.benefit:hover .benefit-icon{transform:translateY(-4px) rotate(3deg)}
+.benefit h3{margin-top:40px;font-family:'Playfair Display',serif;font-size:20px;letter-spacing:.08em;text-transform:uppercase}
+.benefit p{margin-top:12px;font-size:14px;line-height:1.65;color:rgba(40,54,34,.65)}
+.benefit .dash{display:block;margin-top:24px;height:1px;width:32px;background:var(--champagne);transition:width .5s}
+.benefit:hover .dash{width:64px}
+
+/* ---------- Before / After ---------- */
+.ba-head{max-width:720px;margin:0 auto;text-align:center}
+.ba-head .eyebrow{justify-content:center}
+.ba-head .eyebrow::before{display:none}
+.slider{position:relative;margin:56px auto 0;width:100%;max-width:380px;aspect-ratio:540/1117;border-radius:16px;overflow:hidden;cursor:ew-resize;touch-action:none;user-select:none;box-shadow:0 40px 90px -35px rgba(40,54,34,.45)}
+@media(min-width:768px){.slider{height:84vh;width:auto;max-width:none}}
+.slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.slider .after-img{clip-path:inset(0 0 0 50%)}
+.ba-label{position:absolute;top:16px;padding:6px 16px;border-radius:999px;font-size:10px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;backdrop-filter:blur(4px);transition:opacity .3s}
+.ba-label.before{left:16px;background:rgba(40,54,34,.7);color:var(--ivory)}
+.ba-label.after{right:16px;background:rgba(244,240,231,.85);color:var(--forest)}
+.ba-handle{position:absolute;top:0;bottom:0;left:50%}
+.ba-handle::before{content:"";position:absolute;top:0;bottom:0;left:-1px;width:2px;background:rgba(244,240,231,.95);box-shadow:0 0 12px rgba(40,54,34,.4)}
+.ba-knob{position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:var(--ivory);border:1px solid rgba(40,54,34,.1);box-shadow:0 8px 20px rgba(40,54,34,.25);display:flex;align-items:center;justify-content:center;animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(244,240,231,.55)}50%{box-shadow:0 0 0 10px rgba(244,240,231,0)}}
+.ba-hint{margin-top:24px;text-align:center;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:rgba(40,54,34,.5)}
+.disclaimer{margin-top:20px;max-width:440px;border-left:2px solid rgba(196,177,143,.7);padding-left:20px;font-size:14px;font-style:italic;line-height:1.7;color:rgba(40,54,34,.6)}
+.script-line{margin-top:40px;font-family:'Pinyon Script',cursive;font-size:32px;color:var(--sage-deep)}
+.caption{margin-top:16px;text-align:right;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:rgba(40,54,34,.45)}
+
+/* ---------- Why ---------- */
+.feature{display:flex;gap:20px;align-items:flex-start;border-top:1px solid rgba(40,54,34,.15);padding:24px 0}
+.feature:last-child{border-bottom:1px solid rgba(40,54,34,.15)}
+.feature-icon{flex-shrink:0;width:48px;height:48px;border:1px solid rgba(40,54,34,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .5s}
+.feature:hover .feature-icon{transform:translateY(-4px)}
+.feature h3{font-family:'Playfair Display',serif;font-size:18px;letter-spacing:.1em;text-transform:uppercase}
+.feature p{margin-top:4px;font-size:14px;color:rgba(40,54,34,.65)}
+.features{margin-top:40px;max-width:440px}
+.kicker{font-size:14px;letter-spacing:.34em;text-transform:uppercase;color:rgba(40,54,34,.55)}
+
+/* ---------- Ingredients ---------- */
+.ing-grid{margin-top:56px;display:grid;grid-template-columns:1fr;column-gap:56px}
+@media(min-width:640px){.ing-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.ing-grid{grid-template-columns:repeat(3,1fr)}}
+.ing{display:flex;align-items:baseline;gap:16px;border-top:1px solid rgba(40,54,34,.12);padding:16px 0;transition:border-color .3s}
+.ing:hover{border-color:rgba(124,135,100,.5)}
+.ing .n{font-family:'Playfair Display',serif;font-style:italic;font-size:12px;color:var(--champagne)}
+.ing .name{font-family:'Playfair Display',serif;font-size:18px;transition:transform .3s}
+.ing:hover .name{transform:translateX(4px)}
+
+/* ---------- Steps ---------- */
+.steps-head{max-width:640px;margin:0 auto;text-align:center}
+.steps-head .eyebrow{justify-content:center}
+.steps-head .eyebrow::before{display:none}
+.steps{margin-top:64px;display:grid;grid-template-columns:1fr;gap:40px}
+@media(min-width:640px){.steps{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.steps{grid-template-columns:repeat(4,1fr);gap:32px}}
+.step{border-top:1px solid rgba(40,54,34,.2);padding-top:24px}
+.step .num{font-family:'Playfair Display',serif;font-style:italic;font-size:48px;line-height:1;color:rgba(40,54,34,.25);transition:color .5s}
+.step:hover .num{color:var(--sage-deep)}
+.step h3{margin-top:20px;font-family:'Playfair Display',serif;font-size:20px;letter-spacing:.12em;text-transform:uppercase}
+.step p{margin-top:12px;font-size:14px;line-height:1.65;color:rgba(40,54,34,.65)}
+
+/* ---------- Gallery ---------- */
+.gallery{margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:180px;gap:16px}
+@media(min-width:768px){.gallery{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px}}
+.gtile{border-radius:12px;overflow:hidden}
+.gtile img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s ease}
+.gtile:hover img{transform:scale(1.05)}
+.g1{grid-column:span 2;grid-row:span 2}
+.g2,.g5{grid-column:span 2}
+
+/* ---------- Brand ---------- */
+.brand{text-align:center;max-width:720px;margin:0 auto;position:relative}
+.brand img{height:64px;width:auto;margin:0 auto}
+@media(min-width:768px){.brand img{height:80px}}
+.brand .tag{margin-top:32px;font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--sage-deep)}
+.brand blockquote{margin-top:32px;font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,30px);line-height:1.6}
+.divider{display:flex;align-items:center;gap:16px;max-width:320px;margin:40px auto 0}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:rgba(40,54,34,.2)}
+.divider span{font-size:10px;color:var(--champagne)}
+
+/* ---------- Final CTA ---------- */
+.final{position:relative;overflow:hidden;text-align:center;color:var(--ivory)}
+.final .leaf{position:absolute;width:240px;height:240px;color:rgba(244,240,231,.1)}
+.final .leaf.l1{top:-40px;left:-40px;transform:rotate(12deg)}
+.final .leaf.l2{bottom:-56px;right:-32px;width:280px;height:280px;transform:rotate(200deg)}
+.final .script{font-family:'Pinyon Script',cursive;font-size:clamp(30px,4vw,40px);color:rgba(244,240,231,.85)}
+.final h2{color:var(--ivory);margin-top:12px}
+.final p{margin:28px auto 0;max-width:420px;font-size:16px;line-height:1.7;color:rgba(244,240,231,.8)}
+.final .mini{margin-top:36px;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:rgba(244,240,231,.55)}
+
+/* ---------- Footer ---------- */
+footer{background:var(--forest);color:var(--ivory);padding:64px 0}
+.foot-grid{display:flex;flex-direction:column;align-items:center;gap:40px}
+@media(min-width:768px){.foot-grid{flex-direction:row;justify-content:space-between}}
+.foot-brand{display:flex;flex-direction:column;align-items:center;gap:12px}
+@media(min-width:768px){.foot-brand{align-items:flex-start}}
+.foot-brand img{height:44px;width:auto}
+.foot-brand small{font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:rgba(244,240,231,.5)}
+.foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 32px}
+.foot-links a{font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,240,231,.65);transition:color .3s}
+.foot-links a:hover{color:var(--ivory)}
+.foot-links a.gold{color:var(--champagne)}
+.foot-base{margin-top:48px;padding-top:32px;border-top:1px solid rgba(244,240,231,.15);display:flex;flex-direction:column;align-items:center;gap:12px;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:rgba(244,240,231,.4)}
+@media(min-width:768px){.foot-base{flex-direction:row;justify-content:space-between}}
+
+/* ---------- Sticky CTA ---------- */
+.sticky-d{position:fixed;right:24px;bottom:24px;z-index:40;display:none;align-items:center;gap:16px;background:rgba(244,240,231,.95);backdrop-filter:blur(10px);border:1px solid rgba(40,54,34,.1);border-radius:999px;padding:10px 10px 10px 24px;box-shadow:0 18px 45px -15px rgba(40,54,34,.4);transform:translateY(24px);opacity:0;transition:.45s cubic-bezier(.22,1,.36,1)}
+.sticky-d span{font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:rgba(40,54,34,.75)}
+.sticky-d .btn{padding:10px 20px;font-size:10px}
+.sticky-m{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(244,240,231,.95);backdrop-filter:blur(10px);border-top:1px solid rgba(40,54,34,.1);padding:12px 20px;transform:translateY(40px);opacity:0;transition:.45s cubic-bezier(.22,1,.36,1)}
+.sticky-m span{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(40,54,34,.8)}
+.sticky-m .btn{padding:10px 24px;font-size:10px}
+.sticky-d.show,.sticky-m.show{transform:none;opacity:1}
+@media(min-width:768px){.sticky-d{display:flex}.sticky-m{display:none}}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="9.100.0" data-gr-ext-installed="">
+
+<!-- NOTE: images are loaded from the live preview assets folder.
+     For offline use, download the /assets folder next to this file and change
+     https://glimarea-luminous.preview.emergentagent.com/ to  -->
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Glimarea Skincare home">
+      <img src="assets/logo.png" alt="Glimarea Skincare">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#how-it-works">How It Works</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a class="btn nav-cta wa-order" href="https://wa.me/919999999999?text=Hello%20Glimarea%20Skincare!%20I%20would%20like%20to%20order%20the%20Glimarea%20Night%20Cream%20(30g)." target="_blank" rel="noreferrer">Shop Now</a>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div style="display:flex;align-items:center;justify-content:space-between">
+    <img src="assets/logo.png" alt="Glimarea Skincare" style="height:38px">
+    <button class="burger" id="closeMenu" aria-label="Close menu" style="display:flex">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#ingredients">Ingredients</a>
+    <a href="#how-it-works">How It Works</a>
+  </nav>
+  <a class="btn wa-order" href="https://wa.me/919999999999?text=Hello%20Glimarea%20Skincare!%20I%20would%20like%20to%20order%20the%20Glimarea%20Night%20Cream%20(30g)." target="_blank" rel="noreferrer">Shop Now</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <span class="hero-word" aria-hidden="true">Glimarea</span>
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow fade-up d1">Real People. Real Results.</p>
+      <h1>
+        <span class="line"><span>Your Skin's</span></span>
+        <span class="line"><span>Natural</span></span>
+        <span class="line"><span><em>Glow.</em></span></span>
+      </h1>
+      <p class="hero-sub fade-up d2">Fades acne marks. Reveals healthier, brighter-looking skin.</p>
+      <div class="hero-ctas fade-up d3">
+        <a class="btn wa-order" href="https://wa.me/919999999999?text=Hello%20Glimarea%20Skincare!%20I%20would%20like%20to%20order%20the%20Glimarea%20Night%20Cream%20(30g)." target="_blank" rel="noreferrer">Shop Now <span class="arrow">→</span></a>
+        <a class="btn btn-outline" href="#product">Discover the Cream</a>
+      </div>
+      <p class="hero-tag fade-up d3">Glimarea Night Cream &nbsp;✦&nbsp; 30g</p>
+    </div>
+    <div class="hero-img-wrap">
+      <div class="hero-img">
+        <img src="assets/hero-product.jpg" alt="Glimarea Night Cream jar on natural stone with botanical leaves">
+      </div>
+      <div class="hero-badge">
+        <span class="script">Night Cream</span>
+        <small>30g • For all skin types</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-label="Product highlights">
+  <div class="marquee-track" id="marqueeTrack"><span class="marquee-item">Fades Acne Marks</span><span class="marquee-item">Deeply Hydrates</span><span class="marquee-item">Brightens Skin Tone</span><span class="marquee-item">Gentle &amp; Safe</span><span class="marquee-item">Glimarea Night Cream • 30g</span><span class="marquee-item">Real People. Real Results.</span><span class="marquee-item">Fades Acne Marks</span><span class="marquee-item">Deeply Hydrates</span><span class="marquee-item">Brightens Skin Tone</span><span class="marquee-item">Gentle &amp; Safe</span><span class="marquee-item">Glimarea Night Cream • 30g</span><span class="marquee-item">Real People. Real Results.</span></div>
+</div>
+
+<!-- ============ PRODUCT INTRO ============ -->
+<section class="section bg-cream" id="product">
+  <div class="container grid-2">
+    <div class="reveal">
+      <div class="img-frame">
+        <img src="assets/product-stone.jpg" alt="Glimarea Night Cream jar resting on natural stone with white blossoms" loading="lazy">
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">The Cream</p>
+      <h2>Glimarea<br><em>Night Cream</em></h2>
+      <p style="margin-top:12px;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:rgba(40,54,34,.5)">Night Cream • 30g</p>
+      <p class="lead">A thoughtfully crafted night cream that fades the look of acne marks, deeply hydrates and brightens skin tone — gentle and safe, made to become part of your nighttime skincare ritual. Premium skincare, thoughtfully crafted for you and your skin.</p>
+      <ul class="detail-list">
+        <li>Night Cream</li>
+        <li>30g</li>
+        <li>For all skin types</li>
+        <li>Beauty in every layer</li>
+      </ul>
+      <div class="mt-40">
+        <a class="btn wa-order" href="https://wa.me/919999999999?text=Hello%20Glimarea%20Skincare!%20I%20would%20like%20to%20order%20the%20Glimarea%20Night%20Cream%20(30g)." target="_blank" rel="noreferrer">Shop on WhatsApp <span class="arrow">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section class="section" id="benefits">
+  <div class="container">
+    <div class="benefits-head reveal">
+      <div>
+        <p class="eyebrow">Why It Works</p>
+        <h2>Four promises,<br><em>one little jar.</em></h2>
+      </div>
+      <p style="max-width:380px;font-size:14px;line-height:1.7;color:rgba(40,54,34,.65)">The benefits at the heart of every Glimarea Night Cream — simple, honest and focused on healthier-looking skin.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit reveal">
+        <div class="benefit-top"><span class="benefit-num">01</span>
+          <span class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283622" stroke-width="1.1"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg></span>
+        </div>
+        <h3>Fades Acne Marks</h3>
+        <p>Softens the look of post-acne marks for clearer-looking skin.</p>
+        <span class="dash"></span>
+      </div>
+      <div class="benefit reveal">
+        <div class="benefit-top"><span class="benefit-num">02</span>
+          <span class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283622" stroke-width="1.1"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg></span>
+        </div>
+        <h3>Deeply Hydrates</h3>
+        <p>Rich nighttime moisture that comforts skin while you rest.</p>
+        <span class="dash"></span>
+      </div>
+      <div class="benefit reveal">
+        <div class="benefit-top"><span class="benefit-num">03</span>
+          <span class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283622" stroke-width="1.1"><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"></path><circle cx="12" cy="12" r="4"></circle></svg></span>
+        </div>
+        <h3>Brightens Skin Tone</h3>
+        <p>Reveals a healthier, brighter and more even-looking glow.</p>
+        <span class="dash"></span>
+      </div>
+      <div class="benefit reveal">
+        <div class="benefit-top"><span class="benefit-num">04</span>
+          <span class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283622" stroke-width="1.1"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+        </div>
+        <h3>Gentle &amp; Safe</h3>
+        <p>A gentle formula made for everyday skincare, for all skin types.</p>
+        <span class="dash"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEFORE / AFTER ============ -->
+<section class="section bg-stone" id="results">
+  <div class="container">
+    <div class="ba-head reveal">
+      <p class="eyebrow center">Real People. Real Results.</p>
+      <h2>From Acne Marks to<br><em>Healthier-Looking Skin</em></h2>
+      <p class="lead" style="margin-left:auto;margin-right:auto">Same you. Just healthier, brighter-looking skin.</p>
+    </div>
+    <div class="reveal">
+      <div class="slider" id="baSlider" role="slider" aria-label="Before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+        <img src="assets/before.jpg" alt="Skin before using Glimarea Night Cream" draggable="false">
+        <img class="after-img" id="afterImg" src="assets/after.jpg" alt="Skin after using Glimarea Night Cream" draggable="false">
+        <span class="ba-label before" id="labelBefore">Before</span>
+        <span class="ba-label after" id="labelAfter">After</span>
+        <div class="ba-handle" id="baHandle">
+          <span class="ba-knob"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#283622" stroke-width="1.6"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"></path></svg></span>
+        </div>
+      </div>
+      <p class="ba-hint">Drag to compare</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7 DAYS ============ -->
+<section class="section" id="seven-days">
+  <div class="container grid-2" style="grid-template-columns:1fr">
+    <div style="display:grid;gap:56px" class="grid-2">
+      <div class="reveal">
+        <p class="eyebrow">The Ritual</p>
+        <h2>7 Days to<br><em>Glowing Skin</em></h2>
+        <p class="lead">Glimarea's campaign celebrates a simple nightly ritual — seven evenings of consistent care, captured in the brand's own before-and-after imagery.</p>
+        <p class="disclaimer">This is cosmetic skincare, not a medical treatment — everyone's skin journey is different, and individual results may vary.</p>
+        <p class="script-line">Glimarea skincare — Nature's Glow Secret</p>
+      </div>
+      <div class="reveal">
+        <div class="img-frame" style="box-shadow:0 40px 90px -35px rgba(40,54,34,.4)">
+          <img src="assets/ad-7days.png" alt="Glimarea 7 Days to Glowing Skin campaign — before and after with Night Cream jar" loading="lazy">
+        </div>
+        <p class="caption">Glimarea campaign imagery • Individual results vary</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY GLIMAREA ============ -->
+<section class="section bg-cream" id="why">
+  <div class="container grid-2">
+    <div class="reveal">
+      <p class="eyebrow">Why Glimarea</p>
+      <h2><span class="kicker">New Beginnings.</span><br>Timeless Care.<br><em>Real Results.</em></h2>
+      <p class="lead">Premium skincare, thoughtfully crafted for you and your skin.</p>
+      <div class="features">
+        <div class="feature">
+          <span class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#283622" stroke-width="1.1"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg></span>
+          <div><h3>Carefully Selected Ingredients</h3><p>For visible, healthy-looking results.</p></div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#283622" stroke-width="1.1"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg></span>
+          <div><h3>Gentle &amp; Effective</h3><p>For everyday skincare.</p></div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#283622" stroke-width="1.1"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+          <div><h3>Trusted Quality</h3><p>Made with care, backed by quality.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="img-frame">
+        <img src="assets/product-box-source.png" alt="Glimarea Night Cream jar resting on its printed box with ingredients list" loading="lazy">
+      </div>
+      <p class="caption">Night Cream • Beauty in every layer</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INGREDIENTS ============ -->
+<section class="section" id="ingredients">
+  <div class="container">
+    <div class="reveal" style="max-width:640px">
+      <p class="eyebrow">Inside the Jar</p>
+      <h2>Thoughtfully selected,<br><em>honestly listed.</em></h2>
+      <p style="margin-top:24px;font-size:14px;line-height:1.7;color:rgba(40,54,34,.6)">The complete ingredient list, exactly as printed on the Glimarea Night Cream packaging.</p>
+    </div>
+    <div class="ing-grid" id="ingGrid"><div class="ing reveal"><span class="n">01</span><span class="name">Aqua</span></div><div class="ing reveal"><span class="n">02</span><span class="name">Niacinamide</span></div><div class="ing reveal"><span class="n">03</span><span class="name">Glycerin</span></div><div class="ing reveal"><span class="n">04</span><span class="name">Cetyl Alcohol</span></div><div class="ing reveal"><span class="n">05</span><span class="name">Caprylic/Capric Triglyceride</span></div><div class="ing reveal"><span class="n">06</span><span class="name">Butyrospermum Parkii (Shea) Butter</span></div><div class="ing reveal"><span class="n">07</span><span class="name">Glyceryl Stearate</span></div><div class="ing reveal"><span class="n">08</span><span class="name">Cetearyl Alcohol</span></div><div class="ing reveal"><span class="n">09</span><span class="name">Dimethicone</span></div><div class="ing reveal"><span class="n">10</span><span class="name">Phenoxyethanol</span></div><div class="ing reveal"><span class="n">11</span><span class="name">Ethylhexylglycerin</span></div><div class="ing reveal"><span class="n">12</span><span class="name">Allantoin</span></div><div class="ing reveal"><span class="n">13</span><span class="name">Tocopherol (Vitamin E)</span></div><div class="ing reveal"><span class="n">14</span><span class="name">Sodium Hyaluronate</span></div><div class="ing reveal"><span class="n">15</span><span class="name">Fragrance</span></div></div>
+  </div>
+</section>
+
+<!-- ============ HOW TO USE ============ -->
+<section class="section bg-stone" id="how-it-works">
+  <div class="container">
+    <div class="steps-head reveal">
+      <p class="eyebrow center">The Nighttime Ritual</p>
+      <h2>How to use, <em>every evening</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="num">01</span><h3>Cleanse</h3><p>Start with clean, dry skin.</p></div>
+      <div class="step reveal"><span class="num">02</span><h3>Apply</h3><p>Apply an appropriate amount of cream to the face.</p></div>
+      <div class="step reveal"><span class="num">03</span><h3>Massage</h3><p>Gently massage until absorbed.</p></div>
+      <div class="step reveal"><span class="num">04</span><h3>Leave Overnight</h3><p>Let the cream become part of your nighttime skincare routine.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="benefits-head reveal">
+      <div>
+        <p class="eyebrow">The Campaign</p>
+        <h2>Glimarea, <em>in focus.</em></h2>
+      </div>
+      <p style="max-width:380px;font-size:14px;line-height:1.7;color:rgba(40,54,34,.65)">Original Glimarea campaign imagery — the jar, the box and the results, exactly as the brand presents them.</p>
+    </div>
+    <div class="gallery">
+      <div class="gtile g1 reveal"><img src="assets/ad-glow.png" alt="Glimarea hero campaign — Your Skin's Natural Glow" loading="lazy"></div>
+      <div class="gtile g2 reveal"><img src="assets/ad-splitface.png" alt="Glimarea campaign — split before and after portrait" loading="lazy"></div>
+      <div class="gtile reveal"><img src="assets/product-stone.jpg" alt="Glimarea Night Cream jar on stone with white flowers" loading="lazy"></div>
+      <div class="gtile reveal"><img src="assets/ad-healthier.png" alt="Glimarea campaign — From Acne Marks to Healthier-Looking Skin" loading="lazy"></div>
+      <div class="gtile g5 reveal"><img src="assets/product-box-source.png" alt="Glimarea Night Cream jar presented on its box" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND STORY ============ -->
+<section class="section bg-cream" id="about">
+  <div class="container">
+    <div class="brand reveal">
+      <img src="assets/logo.png" alt="Glimarea Skincare logo">
+      <p class="tag">Glimarea Skincare</p>
+      <blockquote>Thoughtful skincare, inspired by nature — simple, consistent care for healthier-looking skin and an everyday moment of self-care, presented with premium attention to every detail.</blockquote>
+      <div class="divider"><span>✦</span></div>
+      <p class="script-line">Nature's Glow Secret</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section bg-sage final" id="shop">
+  <svg class="leaf l1" viewBox="0 0 100 100" fill="none"><path d="M82 14C46 20 24 42 21 80c38-3 60-28 61-66z" stroke="currentColor" stroke-width="2"></path><path d="M26 74c12-22 28-36 48-46" stroke="currentColor" stroke-width="1.6"></path></svg>
+  <svg class="leaf l2" viewBox="0 0 100 100" fill="none"><path d="M82 14C46 20 24 42 21 80c38-3 60-28 61-66z" stroke="currentColor" stroke-width="2"></path><path d="M26 74c12-22 28-36 48-46" stroke="currentColor" stroke-width="1.6"></path></svg>
+  <div class="container reveal" style="position:relative">
+    <p class="script">Clearer Skin.</p>
+    <h2>Brighter You.</h2>
+    <p>Make Glimarea part of your nighttime skincare ritual.</p>
+    <div class="mt-40">
+      <a class="btn btn-light wa-order" href="https://wa.me/919999999999?text=Hello%20Glimarea%20Skincare!%20I%20would%20like%20to%20order%20the%20Glimarea%20Night%20Cream%20(30g)." target="_blank" rel="noreferrer">Shop Glimarea <span class="arrow">→</span></a>
+    </div>
+    <p class="mini">Glimarea Night Cream &nbsp;✦&nbsp; 30g</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <a href="#home" class="foot-brand">
+        <img src="assets/logo-light.png" alt="Glimarea Skincare">
+        <small>Glimarea Skincare</small>
+      </a>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#shop" class="gold">Shop</a>
+      </nav>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Glimarea Skincare</span>
+      <span>Night Cream ✦ 30g</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY CTA ============ -->
+<div class="sticky-d" id="stickyD">
+  <span>Glimarea Night Cream • 30g</span>
+  <a class="btn wa-order" href="https://wa.me/919999999999?text=Hello%20Glimarea%20Skincare!%20I%20would%20like%20to%20order%20the%20Glimarea%20Night%20Cream%20(30g)." target="_blank" rel="noreferrer">Shop Now</a>
+</div>
+<div class="sticky-m" id="stickyM">
+  <span>Night Cream • 30g</span>
+  <a class="btn wa-order" href="https://wa.me/919999999999?text=Hello%20Glimarea%20Skincare!%20I%20would%20like%20to%20order%20the%20Glimarea%20Night%20Cream%20(30g)." target="_blank" rel="noreferrer">Shop Now</a>
+</div>
+
+<script>
+/* ===== WhatsApp order link — REPLACE WITH YOUR NUMBER ===== */
+var WHATSAPP_NUMBER = "919999999999";
+var ORDER_MSG = "Hello Glimarea Skincare! I would like to order the Glimarea Night Cream (30g).";
+var waUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(ORDER_MSG);
+document.querySelectorAll(".wa-order").forEach(function (a) { a.href = waUrl; });
+
+/* ===== Sticky nav + sticky CTA ===== */
+var nav = document.getElementById("nav");
+var stickyD = document.getElementById("stickyD");
+var stickyM = document.getElementById("stickyM");
+function onScroll() {
+  nav.classList.toggle("scrolled", window.scrollY > 40);
+  var show = window.scrollY > window.innerHeight * 0.85;
+  stickyD.classList.toggle("show", show);
+  stickyM.classList.toggle("show", show);
+}
+window.addEventListener("scroll", onScroll, { passive: true });
+onScroll();
+
+/* ===== Mobile menu ===== */
+var menu = document.getElementById("mobileMenu");
+document.getElementById("burger").addEventListener("click", function () { menu.classList.add("open"); });
+document.getElementById("closeMenu").addEventListener("click", function () { menu.classList.remove("open"); });
+menu.querySelectorAll("a").forEach(function (a) {
+  a.addEventListener("click", function () { menu.classList.remove("open"); });
+});
+
+/* ===== Marquee (seamless infinite loop) ===== */
+var ITEMS = ["Fades Acne Marks", "Deeply Hydrates", "Brightens Skin Tone", "Gentle & Safe", "Glimarea Night Cream • 30g", "Real People. Real Results."];
+var track = document.getElementById("marqueeTrack");
+var html = "";
+for (var r = 0; r < 2; r++) {
+  ITEMS.forEach(function (t) { html += '<span class="marquee-item">' + t + "</span>"; });
+}
+track.innerHTML = html;
+
+/* ===== Ingredients (as printed on the packaging) ===== */
+var INGREDIENTS = ["Aqua","Niacinamide","Glycerin","Cetyl Alcohol","Caprylic/Capric Triglyceride","Butyrospermum Parkii (Shea) Butter","Glyceryl Stearate","Cetearyl Alcohol","Dimethicone","Phenoxyethanol","Ethylhexylglycerin","Allantoin","Tocopherol (Vitamin E)","Sodium Hyaluronate","Fragrance"];
+document.getElementById("ingGrid").innerHTML = INGREDIENTS.map(function (ing, i) {
+  return '<div class="ing reveal"><span class="n">' + String(i + 1).padStart(2, "0") + '</span><span class="name">' + ing + "</span></div>";
+}).join("");
+
+/* ===== Scroll reveals ===== */
+var io = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  });
+}, { rootMargin: "0px 0px -70px 0px" });
+document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+
+/* ===== Before / After slider ===== */
+var slider = document.getElementById("baSlider");
+var afterImg = document.getElementById("afterImg");
+var handle = document.getElementById("baHandle");
+var labelB = document.getElementById("labelBefore");
+var labelA = document.getElementById("labelAfter");
+var dragging = false;
+function setPos(p) {
+  p = Math.min(96, Math.max(4, p));
+  afterImg.style.clipPath = "inset(0 0 0 " + p + "%)";
+  handle.style.left = p + "%";
+  labelB.style.opacity = p < 18 ? 0 : 1;
+  labelA.style.opacity = p > 82 ? 0 : 1;
+  slider.setAttribute("aria-valuenow", Math.round(p));
+}
+function fromEvent(e) {
+  var r = slider.getBoundingClientRect();
+  setPos(((e.clientX - r.left) / r.width) * 100);
+}
+slider.addEventListener("pointerdown", function (e) { dragging = true; slider.setPointerCapture(e.pointerId); fromEvent(e); });
+slider.addEventListener("pointermove", function (e) { if (dragging) fromEvent(e); });
+slider.addEventListener("pointerup", function () { dragging = false; });
+slider.addEventListener("pointercancel", function () { dragging = false; });
+slider.addEventListener("keydown", function (e) {
+  var p = parseFloat(slider.getAttribute("aria-valuenow"));
+  if (e.key === "ArrowLeft") setPos(p - 4);
+  if (e.key === "ArrowRight") setPos(p + 4);
+});
+</script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
