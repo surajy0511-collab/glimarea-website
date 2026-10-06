@@ -115,6 +115,10 @@ h2 em{font-style:italic;color:var(--sage-deep)}
 .img-frame{border-radius:16px;overflow:hidden}
 .img-frame img{width:100%;object-fit:cover;transition:transform 1.4s ease}
 .img-frame:hover img{transform:scale(1.04)}
+/* Product-only crop for the Why Glimarea image: hides the promotional copy and keeps the jar + box. */
+.product-only-frame{height:clamp(430px,42vw,620px);position:relative}
+.product-only-frame img{width:145%;max-width:none;height:auto;position:absolute;left:-22%;top:-38%;object-fit:initial;transform:none!important}
+@media(max-width:767px){.product-only-frame{height:430px}.product-only-frame img{width:155%;left:-27%;top:-40%}}
 .detail-list{margin-top:36px;max-width:440px;display:grid;grid-template-columns:1fr 1fr;column-gap:32px;list-style:none}
 .detail-list li{display:flex;align-items:center;gap:12px;border-top:1px solid rgba(40,54,34,.15);padding:12px 0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(40,54,34,.7)}
 .detail-list li::before{content:"✦";font-size:8px;color:var(--champagne)}
@@ -193,11 +197,29 @@ h2 em{font-style:italic;color:var(--sage-deep)}
 /* ---------- Gallery ---------- */
 .gallery{margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:180px;gap:16px}
 @media(min-width:768px){.gallery{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px}}
-.gtile{border-radius:12px;overflow:hidden}
+.gtile{border-radius:12px;overflow:hidden;position:relative;background:var(--stone)}
 .gtile img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s ease}
 .gtile:hover img{transform:scale(1.05)}
 .g1{grid-column:span 2;grid-row:span 2}
 .g2,.g5{grid-column:span 2}
+/* Clean campaign crops: remove promotional copy and keep the visual subject */
+.gallery .g1 img{object-position:50% 78%;transform:scale(1.55)}
+.gallery .g2 img{object-position:50% 43%;transform:scale(1.18)}
+.gallery .g3-clean img{object-position:50% 35%;transform:scale(1.08)}
+.gallery .g4-clean img{object-position:50% 84%;transform:scale(1.75)}
+.gallery .g5 img{object-position:50% 78%;transform:scale(1.35)}
+.gallery .g1:hover img{transform:scale(1.62)}
+.gallery .g2:hover img{transform:scale(1.23)}
+.gallery .g3-clean:hover img{transform:scale(1.12)}
+.gallery .g4-clean:hover img{transform:scale(1.82)}
+.gallery .g5:hover img{transform:scale(1.42)}
+@media(max-width:767px){
+  .gallery .g1 img{transform:scale(1.45)}
+  .gallery .g2 img{transform:scale(1.08)}
+  .gallery .g3-clean img{transform:scale(1.05)}
+  .gallery .g4-clean img{transform:scale(1.55)}
+  .gallery .g5 img{transform:scale(1.25)}
+}
 
 /* ---------- Brand ---------- */
 .brand{text-align:center;max-width:720px;margin:0 auto;position:relative}
@@ -465,8 +487,8 @@ footer{background:var(--forest);color:var(--ivory);padding:64px 0}
       </div>
     </div>
     <div class="reveal">
-      <div class="img-frame">
-        <img src="assets/product-box-source.png" alt="Glimarea Night Cream jar resting on its printed box with ingredients list" loading="lazy">
+      <div class="img-frame product-only-frame">
+        <img src="assets/product-box-source.png" alt="Glimarea Night Cream jar and box" loading="lazy">
       </div>
       <p class="caption">Night Cream • Beauty in every layer</p>
     </div>
@@ -512,11 +534,11 @@ footer{background:var(--forest);color:var(--ivory);padding:64px 0}
       <p style="max-width:380px;font-size:14px;line-height:1.7;color:rgba(40,54,34,.65)">Original Glimarea campaign imagery — the jar, the box and the results, exactly as the brand presents them.</p>
     </div>
     <div class="gallery">
-      <div class="gtile g1 reveal"><img src="assets/ad-glow.png" alt="Glimarea hero campaign — Your Skin's Natural Glow" loading="lazy"></div>
-      <div class="gtile g2 reveal"><img src="assets/ad-splitface.png" alt="Glimarea campaign — split before and after portrait" loading="lazy"></div>
-      <div class="gtile reveal"><img src="assets/product-stone.jpg" alt="Glimarea Night Cream jar on stone with white flowers" loading="lazy"></div>
-      <div class="gtile reveal"><img src="assets/ad-healthier.png" alt="Glimarea campaign — From Acne Marks to Healthier-Looking Skin" loading="lazy"></div>
-      <div class="gtile g5 reveal"><img src="assets/product-box-source.png" alt="Glimarea Night Cream jar presented on its box" loading="lazy"></div>
+      <div class="gtile g1 reveal"><img src="assets/ad-glow.png" alt="Glimarea Night Cream jar with botanical leaves" loading="lazy"></div>
+      <div class="gtile g2 reveal"><img src="assets/ad-splitface.png" alt="Glimarea skincare before and after portrait" loading="lazy"></div>
+      <div class="gtile g3-clean reveal"><img src="assets/product-stone.jpg" alt="Glimarea Night Cream jar on natural stone" loading="lazy"></div>
+      <div class="gtile g4-clean reveal"><img src="assets/ad-healthier.png" alt="Glimarea Night Cream product" loading="lazy"></div>
+      <div class="gtile g5 reveal"><img src="assets/product-box-source.png" alt="Glimarea Night Cream jar and box" loading="lazy"></div>
     </div>
   </div>
 </section>
